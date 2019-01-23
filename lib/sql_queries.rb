@@ -23,9 +23,9 @@ end
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
   # Need to compare the the projects.funding_goal to the SUM(pledges.amount) of each project
   # then list the title and [projects.funding_goal - SUM(pledges.amount)] if it is > 0 
-"SELECT title, (SUM(pledges.amount) - funding_goal) FROM projects 
+"SELECT title, (SUM(pledges.amount) - funding_goal) AS amnt_over FROM projects 
 INNER JOIN pledges ON projects.id = pledges.project_id
-WHERE (SUM(pledges.amount) - funding_goal) >= 0
+WHERE amnt_over >= 0
 GROUP BY pledges.project_id;"
 end
 
