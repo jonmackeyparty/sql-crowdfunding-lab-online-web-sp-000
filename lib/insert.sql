@@ -15,7 +15,7 @@ INSERT INTO users (id, name, age) VALUES
 INSERT INTO users (id, name, age) VALUES
 (8, 'Victoria', 23);
 INSERT INTO users (id, name, age) VALUES
-
+(9, 'Franz', 100);
 INSERT INTO users (id, name, age) VALUES
 
 INSERT INTO users (id, name, age) VALUES
