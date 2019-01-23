@@ -31,7 +31,7 @@ INSERT INTO users (id, name, age) VALUES
 INSERT INTO users (id, name, age) VALUES
 (16, 'Squid', 5);
 INSERT INTO users (id, name, age) VALUES
-
+(17, 'Whale', 6);
 INSERT INTO users (id, name, age) VALUES
 
 INSERT INTO users (id, name, age) VALUES
