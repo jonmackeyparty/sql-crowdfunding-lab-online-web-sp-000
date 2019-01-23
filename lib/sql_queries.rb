@@ -21,6 +21,8 @@ ORDER BY users.name;"
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
+  # Need to compare the the projects.funding_goal to the SUM(pledges.amount) of each project
+  # then list the title and [projects.funding_goal - SUM(pledges.amount)] if it is > 0 
 ""
 end
 
